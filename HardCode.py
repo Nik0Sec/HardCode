@@ -51,8 +51,8 @@ def main():
                 subprocess.run(['grep', '-r', args.string, search_dir], stdout=f)
                 sleep(1)
                 print("\nFile saved as %s" % args.output)
-    else:
-        subprocess.run(['grep', '-r', args.string, search_dir])
+        else:
+            subprocess.run(['grep', '-r', args.string, search_dir])
 
     if args.input:
         with open(args.input, 'r') as file:
